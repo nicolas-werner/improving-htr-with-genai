@@ -81,9 +81,6 @@ This will open the marimo notebook in your default web browser.
 - Click "Run HTR Improvement"
 - View both the original HTR output and the improved transcription
 
-## 🖼️ Example Outputs
-
-The `examples/output_images` directory contains sample outputs from the tool.
 
 ## 🧠 How It Works
 
@@ -92,6 +89,30 @@ The notebook uses GPT-4o (via the OpenAI API) to analyze images of handwritten t
 - **Zero Shot**: Sends the image directly to GPT-4o with a prompt to transcribe it
 - **One Shot**: Provides an example image and its correct transcription to help GPT-4o better understand the handwriting style
 - **HTR Improvement**: Sends both the image and the initial OCR output to GPT-4o, asking it to correct any errors
+
+## ��️ Example Outputs
+
+Below are examples demonstrating the capabilities of this tool on historical documents:
+
+### Zero Shot Transcription
+
+![Zero Shot Example](examples/output_images/screenshot_1.png)
+
+### One Shot Transcription
+
+![One Shot Example](examples/output_images/screenshot_2.png)
+
+### HTR Improvement
+
+![HTR Improvement Example](examples/output_images/screenshot_3.png)
+
+## 🌐 Deploying to GitHub Pages
+
+This project includes a GitHub Action workflow to automatically deploy the notebook as an interactive web app on GitHub Pages.
+
+When you push changes to the main branch, the notebook will be automatically deployed and accessible at `https://<username>.github.io/<repository-name>/`.
+
+
 
 ## 📄 License
 
