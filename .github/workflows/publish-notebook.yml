@@ -32,7 +32,7 @@ jobs:
 
       - name: 🛠️ Export notebook
         run: |
-          marimo export html-wasm poc_notebooks/lot-books.py -o _site --mode run
+          marimo export html-wasm poc_notebook/lot-books.py -o _site --mode run
 
       - name: Create .nojekyll file
         run: touch _site/.nojekyll
